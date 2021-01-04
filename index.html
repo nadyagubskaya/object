@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <script>
+
+
+            var menu = {
+                width: 200,
+                height: 300,
+                title: "My menu"
+            };
+
+
+            function getValues(obj) {
+                var values = "";
+                for (key in obj){
+                    values += obj[key] + " " ;
+                }
+                return values
+            }
+
+            function getKeys(obj) {
+                var keys = "";
+                for (key in obj){
+                    keys += key  + " " ;
+                }
+                return keys
+            }
+            
+            function getEntries(obj){
+                var arr = [];
+                for (key in obj){
+                    arr.push([key, obj[key]]);
+                }
+                return arr
+            }
+            
+            var result = getEntries(menu);
+            console.log(result);
+
+
+
+        </script>
+
+    </body>
+</html>
