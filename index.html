@@ -17,17 +17,17 @@
 
 
             function getValues(obj) {
-                var values = "";
+                var values = [];
                 for (key in obj){
-                    values += obj[key] + " " ;
+                    values.push(obj[key]) ;
                 }
                 return values
             }
 
             function getKeys(obj) {
-                var keys = "";
+                var keys = [];
                 for (key in obj){
-                    keys += key  + " " ;
+                    keys.push(key);
                 }
                 return keys
             }
